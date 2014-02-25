@@ -1,26 +1,26 @@
 obj/local/armeabi/objs/box2d_static/Common/b2BlockAllocator.o: \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/Common/b2BlockAllocator.cpp \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstdlib \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/climits \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/memory
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/Common/b2BlockAllocator.cpp \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstdlib \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/climits \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/memory
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstdlib:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstdlib:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/climits:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/climits:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/memory:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/memory:

@@ -1,95 +1,95 @@
 obj/local/armeabi/objs/cocos2dx_static/tilemap_parallax_nodes/CCTMXObjectGroup.o: \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/tilemap_parallax_nodes/CCTMXObjectGroup.cpp \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/tilemap_parallax_nodes/CCTMXObjectGroup.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCGeometry.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h \
- /cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/android/log.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDataVisitor.h \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/string \
- /cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/math.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/functional \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/ccCArray.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccMacros.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCCommon.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCStdC.h \
- /cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/stdlib.h \
- /cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/alloca.h \
- /cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/strings.h \
- /cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/memory.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDictionary.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/uthash.h \
- /cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/inttypes.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/tilemap_parallax_nodes/CCTMXObjectGroup.cpp \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/tilemap_parallax_nodes/CCTMXObjectGroup.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCGeometry.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h \
+ /Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/android/log.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDataVisitor.h \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/string \
+ /Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/math.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/functional \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/ccCArray.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccMacros.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCCommon.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCStdC.h \
+ /Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/stdlib.h \
+ /Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/alloca.h \
+ /Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/strings.h \
+ /Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/memory.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDictionary.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/uthash.h \
+ /Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/inttypes.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/tilemap_parallax_nodes/CCTMXObjectGroup.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/tilemap_parallax_nodes/CCTMXObjectGroup.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCGeometry.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCGeometry.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h:
 
-/cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/android/log.h:
+/Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/android/log.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDataVisitor.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDataVisitor.h:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/string:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/string:
 
-/cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/math.h:
+/Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/math.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/functional:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/functional:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/ccCArray.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/ccCArray.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccMacros.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccMacros.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCCommon.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCCommon.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCStdC.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/platform/android/CCStdC.h:
 
-/cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/stdlib.h:
+/Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/stdlib.h:
 
-/cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/alloca.h:
+/Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/alloca.h:
 
-/cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/strings.h:
+/Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/strings.h:
 
-/cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/memory.h:
+/Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/memory.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/include/ccConfig.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCObject.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDictionary.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCDictionary.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/uthash.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/support/data_support/uthash.h:
 
-/cygdrive/c/android-ndk-r9/platforms/android-8/arch-arm/usr/include/inttypes.h:
+/Applications/eclipse/android-ndk-r9c/platforms/android-8/arch-arm/usr/include/inttypes.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCArray.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../cocos2dx/cocoa/CCString.h:

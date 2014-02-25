@@ -1,104 +1,104 @@
 obj/local/armeabi/objs/box2d_static/Dynamics/Joints/b2Joint.o: \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/Dynamics/Joints/b2Joint.cpp \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2Joint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Math.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cfloat \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstddef \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/limits \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2DistanceJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WheelJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2MouseJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RevoluteJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PrismaticJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PulleyJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2GearJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WeldJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2FrictionJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RopeJoint.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2Body.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/Shapes/b2Shape.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2Collision.h \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/climits \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/memory \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2World.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2StackAllocator.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2ContactManager.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2BroadPhase.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2DynamicTree.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2GrowableStack.h \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring \
- /cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/algorithm \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2WorldCallbacks.h \
- /cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2TimeStep.h
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/Dynamics/Joints/b2Joint.cpp \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2Joint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Math.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cfloat \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstddef \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/limits \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2DistanceJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WheelJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2MouseJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PulleyJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2GearJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WeldJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2FrictionJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RopeJoint.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2Body.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/Shapes/b2Shape.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2Collision.h \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/climits \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/memory \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2World.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2StackAllocator.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2ContactManager.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2BroadPhase.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2DynamicTree.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2GrowableStack.h \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring \
+ /Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/algorithm \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2WorldCallbacks.h \
+ /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2TimeStep.h
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2Joint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2Joint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Math.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Math.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2Settings.h:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cmath:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cfloat:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cfloat:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstddef:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstddef:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/limits:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/limits:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2DistanceJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2DistanceJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WheelJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WheelJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2MouseJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2MouseJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RevoluteJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RevoluteJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PrismaticJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PrismaticJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PulleyJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2PulleyJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2GearJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2GearJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WeldJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WeldJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2FrictionJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2FrictionJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RopeJoint.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RopeJoint.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2Body.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2Body.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/Shapes/b2Shape.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/Shapes/b2Shape.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2BlockAllocator.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2Collision.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2Collision.h:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/climits:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/climits:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/memory:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/memory:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2World.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2World.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2StackAllocator.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2StackAllocator.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2ContactManager.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2ContactManager.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2BroadPhase.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2BroadPhase.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2DynamicTree.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Collision/b2DynamicTree.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2GrowableStack.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Common/b2GrowableStack.h:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring:
 
-/cygdrive/c/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include/algorithm:
+/Applications/eclipse/android-ndk-r9c/sources/cxx-stl/gnu-libstdc++/4.6/include/algorithm:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2WorldCallbacks.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2WorldCallbacks.h:
 
-/cygdrive/d/project/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2TimeStep.h:
+/Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/b2TimeStep.h:
