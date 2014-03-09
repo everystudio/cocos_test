@@ -41,9 +41,8 @@ bool PinballScene::init()
 	}
 	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
 
-	CCPoint scroll_pos = ccp(0 , winSize.height * 0.2);
-
-	this->setPosition(scroll_pos);
+	//CCPoint scroll_pos = ccp(0 , winSize.height * 0.2);
+	//this->setPosition(scroll_pos);
 
 	ballCount = 5;
 

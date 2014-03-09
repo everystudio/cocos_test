@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "AppMacros.h"
 
+#include "TitleScene.h"
 #include "PinballScene.h"
 #include "HelloWorldScene.h"
 #include "BlockGameScene.h"
@@ -71,7 +72,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	// create a scene. it's an autorelease object
 	//CCScene *pScene = BlockGameScene::scene();
 	//CCScene *pScene = PinballScene::scene();
-	CCScene *pScene = ActionGameScene::scene();
+	//CCScene *pScene = ActionGameScene::scene();
+	CCScene *pScene = TitleScene::scene();
 
 	// run
 	pDirector->runWithScene(pScene);
