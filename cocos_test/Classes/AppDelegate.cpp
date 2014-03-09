@@ -4,6 +4,7 @@
 #include "PinballScene.h"
 #include "HelloWorldScene.h"
 #include "BlockGameScene.h"
+#include "ActionGameScene.h"
 
 USING_NS_CC;
 
@@ -69,7 +70,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 	// create a scene. it's an autorelease object
 	//CCScene *pScene = BlockGameScene::scene();
-	CCScene *pScene = PinballScene::scene();
+	//CCScene *pScene = PinballScene::scene();
+	CCScene *pScene = ActionGameScene::scene();
 
 	// run
 	pDirector->runWithScene(pScene);

@@ -249,7 +249,7 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/AppDelegate.o: \
  /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WeldJoint.h \
  jni/../../Classes/HelloWorldScene.h jni/../../Classes/BlockGameScene.h \
  jni/../../Classes/BlockBase.h jni/../../Classes/Config.h \
- jni/../../Classes/HandBase.h
+ jni/../../Classes/HandBase.h jni/../../Classes/ActionGameScene.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -758,3 +758,5 @@ jni/../../Classes/BlockBase.h:
 jni/../../Classes/Config.h:
 
 jni/../../Classes/HandBase.h:
+
+jni/../../Classes/ActionGameScene.h:

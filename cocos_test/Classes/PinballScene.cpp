@@ -39,6 +39,11 @@ bool PinballScene::init()
 	if(!CCLayer::init()){
 		return false;
 	}
+	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+
+	CCPoint scroll_pos = ccp(0 , winSize.height * 0.2);
+
+	this->setPosition(scroll_pos);
 
 	ballCount = 5;
 
@@ -46,7 +51,6 @@ bool PinballScene::init()
 
 	CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
 	CCSize frameSize = pEGLView->getFrameSize();
-
 
 	// シェイプデータの読み込み
 	gbox2d::GB2ShapeCache::sharedGB2ShapeCache()->addShapesWithFile("pinball_physics.plist" , scale );

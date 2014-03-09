@@ -23,12 +23,23 @@ THE SOFTWARE.
 ****************************************************************************/
 package net.ths2.cocos_test;
 
+import jp.adlantis.android.AdlantisView;
+import jp.adlantis.android.utils.AdlantisUtils;
+
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 public class cocos_test extends Cocos2dxActivity{
+	/** AdlantisのパブリッシャーID */
+	private final String adlantisPID = "MzE4MTE%3D%0A";
+	/** メンバにする必要ないかもだけど、後で表示/非表示とかすると思うんで */
+	private LinearLayout adlantisView;
 
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -42,6 +53,47 @@ public class cocos_test extends Cocos2dxActivity{
 		return glSurfaceView;
 	}
 
+	//ここから追加
+	@Override
+	public void init(){
+		super.init();
+		//setAdlantisView();
+	}
+	/**
+	 *  Adlantisの広告を表示する
+	 *
+	 */
+	private void setAdlantisView(){
+		//レイアウトの作成
+		RelativeLayout mainView = new RelativeLayout(this);
+		adlantisView = new LinearLayout(this);
+		RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
+				LinearLayout.LayoutParams.FILL_PARENT,
+				(int)(50 * getResources().getDisplayMetrics().density));
+
+		layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+		adlantisView.setGravity(Gravity.CENTER_HORIZONTAL);
+		adlantisView.setLayoutParams(layoutParams);
+
+		//AdlantisViewのインスタンス作成
+		final AdlantisView adView = new AdlantisView(this);
+		adView.setPublisherID(adlantisPID);
+
+		//レイアウトに追加
+		adlantisView.addView(adView , new LinearLayout.LayoutParams(
+				LinearLayout.LayoutParams.FILL_PARENT,
+				AdlantisUtils.adHeightPixels(this)
+				));
+		mainView.addView(adlantisView);
+
+		/*
+
+		*/
+
+		//viewを追加
+		this.addContentView(mainView , new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT));
+	}
+	//ここまで追加
 
 	static {
 		System.loadLibrary("cocos2dcpp");
