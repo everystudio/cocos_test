@@ -17,6 +17,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/HandBase.cpp \
                    ../../Classes/SkitSceneBase.cpp \
                    ../../Classes/PinballScene.cpp \
+                   ../../Classes/CrushGameScene.cpp \
                    ../../Classes/ActionGameScene.cpp \
                    ../../Classes/GB2ShapeCache-x.cpp \
                    ../../Classes/HelloWorldScene.cpp

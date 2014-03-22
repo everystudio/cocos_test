@@ -246,7 +246,8 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/PinballScene.o: \
  /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RevoluteJoint.h \
  /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2RopeJoint.h \
  /Applications/eclipse/cocos2d-x-2.1.4/projects/cocos_test/proj.android/../../../external/Box2D/../Box2D/Dynamics/Joints/b2WeldJoint.h \
- jni/../../Classes/GB2ShapeCache-x.h jni/../../Classes/AppMacros.h
+ jni/../../Classes/GB2ShapeCache-x.h jni/../../Classes/AppMacros.h \
+ jni/../../Classes/TitleScene.h jni/../../Classes/Config.h
 
 jni/../../Classes/PinballScene.h:
 
@@ -745,3 +746,7 @@ jni/../../Classes/PinballScene.h:
 jni/../../Classes/GB2ShapeCache-x.h:
 
 jni/../../Classes/AppMacros.h:
+
+jni/../../Classes/TitleScene.h:
+
+jni/../../Classes/Config.h:

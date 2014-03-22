@@ -72,6 +72,8 @@ public:
 
 	void test();
 
+	void callbackGotoTitleScene(CCObject* pSender);
+
 };
 
 

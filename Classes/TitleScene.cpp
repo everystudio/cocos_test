@@ -6,6 +6,7 @@
  */
 #include "TitleScene.h"
 
+#include "CrushGameScene.h"
 #include "PinballScene.h"
 
 USING_NS_CC;
@@ -35,14 +36,19 @@ bool TitleScene::init()
 
 	//シーン切り替えのトリガーになる"1"のボタン
 	//ボタンをクリックすると、HelloWorld::myCallbackが発動
+
+	// 青ピンボールへ
 	CCMenuItemImage *pBtnItem = CCMenuItemImage::create("block/block_blue.png", "block/block_red.png", this, menu_selector(TitleScene::CallbackToPinballBase));
 	CCMenu* pBtn = CCMenu::create(pBtnItem, NULL);
 	pBtn->setPosition(ccp(s.width*.5, s.height*.5));
-	//pBtn->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-	//pBtn->setPosition(ccp(visibleSize.width/2 , visibleSize.height/2 ));
-	pBtn->setPosition(visibleSize.width/2 ,visibleSize.height*0.1f);
-	pBtn->setPosition(0.0f , 0.0f );
 	this->addChild(pBtn);
+
+	// 翠ラッシュゲーム
+	CCMenuItemImage *pButtonCrush = CCMenuItemImage::create("block/block_green.png", "block/block_red.png", this, menu_selector(TitleScene::CallbackToCrushGameScene));
+	CCMenu* pBtnCrs = CCMenu::create(pButtonCrush, NULL);
+	pBtnCrs->setPosition(ccp(s.width*.5, s.height*.5 + 32) );
+	this->addChild(pBtnCrs);
+
 
 	return true;
 }
@@ -61,6 +67,21 @@ void TitleScene::CallbackToPinballBase(CCObject* pSender)
 		CCDirector::sharedDirector()->replaceScene(pScene);
 	}
 }
+
+void TitleScene::CallbackToCrushGameScene(CCObject* pSender)
+{
+	//次のシーンとして、HelloWorld2シーンをセット
+	CCScene* nextScene = CrushGameScene::scene();
+	//切り替えの時間を設定。ここでは1秒
+	float duration = 1.0f;
+	//フェードイン＆フェードアウト（CCTransitionFade）でトランジショーーーン
+	CCScene* pScene = CCTransitionFade::create(duration, nextScene);
+	if(pScene){
+		CCDirector::sharedDirector()->replaceScene(pScene);
+	}
+}
+
+
 
 
 

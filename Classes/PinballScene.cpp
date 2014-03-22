@@ -9,6 +9,9 @@
 #include "GB2ShapeCache-x.h"
 #include "AppMacros.h"
 
+#include "TitleScene.h"
+
+
 static int PTM_RATIO = 32;
 static int scorePoint = 0;
 
@@ -39,11 +42,13 @@ bool PinballScene::init()
 	if(!CCLayer::init()){
 		return false;
 	}
+
 	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
 
 	//CCPoint scroll_pos = ccp(0 , winSize.height * 0.2);
 	//this->setPosition(scroll_pos);
 
+	scorePoint = 0;
 	ballCount = 5;
 
 	float scale = CCDirector::sharedDirector()->getContentScaleFactor();
@@ -82,9 +87,16 @@ bool PinballScene::init()
 	sprintf( temp , "scale=%f x=%d y=%d" , scale , (int)frameSize.width , (int)frameSize.height);
 	//std::string test = sprints( "scale=%f" , scale );
 
-	CCLabelTTF *text = CCLabelTTF::create(temp, "arial", 20);
-	text->setPosition(CCPointMake(10, 10));
-	this->addChild(text);
+	CCLog( "%s" , temp );
+
+//	CCLabelTTF *text = CCLabelTTF::create(temp, "arial", 20);
+//	text->setPosition(CCPointMake(10, 10));
+//	this->addChild(text);
+	// 翠ラッシュゲーム
+	CCMenuItemImage *pButtonCrush = CCMenuItemImage::create("block/block_yellow.png", "block/block_red.png", this, menu_selector(PinballScene::callbackGotoTitleScene));
+	CCMenu* pBtnCrs = CCMenu::create(pButtonCrush, NULL);
+	pBtnCrs->setPosition(ccp(winSize.width*0.9f, winSize.height*0.9f + 32) );
+	this->addChild(pBtnCrs,kZOrder_Button);
 
 
 	return true;
@@ -122,6 +134,11 @@ void PinballScene::createBackground( int _iStageNo )
 	// 背景
 	CCSprite* bg = CCSprite::create( filename );
 	bg->setPosition(CCPoint(winSize.width / 2 , winSize.height / 2 ));
+
+	CCLog( "%f : %f" , winSize.width/2 , winSize.height /2 );
+
+
+
 	//bg->setPosition(CCPoint(winSize.width / 2  , 50 ));
 	this->addChild( bg , kZOrder_Background , kTagBackground);
 	// 背景の物理構造
@@ -261,6 +278,8 @@ void PinballScene::tapReset()
 {
 	CCScene* scene = PinballScene::scene();
 	CCDirector::sharedDirector()->replaceScene(scene);
+
+	scorePoint = 0;
 	return;
 }
 
@@ -273,7 +292,6 @@ void PinballScene::update(float dt)
 	world->Step(dt , velocityIterations , positionIterations );
 
 	float scale = CCDirector::sharedDirector()->getContentScaleFactor();
-
 
 	for(b2Body* b = world->GetBodyList() ; b ; b = b->GetNext()){
 		if(b->GetUserData() != NULL ){
@@ -362,6 +380,20 @@ void GamePhysicsContactListener::BeginContact(b2Contact* contact)
 
 
 
+void PinballScene::callbackGotoTitleScene(CCObject* pSender)
+{
+	//次のシーンとして、HelloWorld2シーンをセット
+	CCScene* nextScene = TitleScene::scene();
+	//切り替えの時間を設定。ここでは1秒
+	float duration = 1.0f;
+	//フェードイン＆フェードアウト（CCTransitionFade）でトランジショーーーン
+	CCScene* pScene = CCTransitionFade::create(duration, nextScene);
+	if(pScene){
+		CCDirector::sharedDirector()->replaceScene(pScene);
+	}
+
+	return;
+}
 
 
 
