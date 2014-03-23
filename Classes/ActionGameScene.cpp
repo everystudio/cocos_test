@@ -10,8 +10,11 @@
 #include "GB2ShapeCache-x.h"
 #include "AppMacros.h"
 
+ #include "TitleScene.h"
+
 static int PTM_RATIO = 32;
 static int scorePoint = 0;
+
 
 //#include "SkitSceneBase.h"
 //#include "BlockGameScene.h"
@@ -111,8 +114,33 @@ bool ActionGameScene::init()
 
 	//pLoc = [self _getPositionFromObjectProperties:properties];
 
+	// タイトル画面へ戻る
+	CCMenuItemImage *pButtonTitle = CCMenuItemImage::create("block/block_yellow.png", "block/block_red.png", this, menu_selector(ActionGameScene::callbackGotoTitleScene));
+	CCMenu* pBtnTitle = CCMenu::create(pButtonTitle, NULL);
+	pBtnTitle->setPosition(ccp(winSize.width*0.9f, winSize.height*0.9f + 32) );
+	this->addChild(pBtnTitle , kZOrder_Button);
+
 	return true;
 }
+
+
+
+void ActionGameScene::callbackGotoTitleScene(CCObject* pSender)
+{
+	//次のシーンとして、HelloWorld2シーンをセット
+	CCScene* nextScene = TitleScene::scene();
+	//切り替えの時間を設定。ここでは1秒
+	float duration = 1.0f;
+	//フェードイン＆フェードアウト（CCTransitionFade）でトランジショーーーン
+	CCScene* pScene = CCTransitionFade::create(duration, nextScene);
+	if(pScene){
+		CCDirector::sharedDirector()->replaceScene(pScene);
+	}
+
+	return;
+}
+
+
 
 
 

@@ -21,6 +21,7 @@ public:
 	void CallbackToPinballBase(CCObject* pSender);
 	void CallbackToActionGameBase(CCObject* pSender);
 	void CallbackToCrushGameScene(CCObject* pSender);
+	void CallbackToActionGameScene(CCObject* pSender);
 
 };
 

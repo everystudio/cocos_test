@@ -8,6 +8,7 @@
 
 #include "CrushGameScene.h"
 #include "PinballScene.h"
+#include "ActionGameScene.h"
 
 USING_NS_CC;
 
@@ -49,6 +50,11 @@ bool TitleScene::init()
 	pBtnCrs->setPosition(ccp(s.width*.5, s.height*.5 + 32) );
 	this->addChild(pBtnCrs);
 
+	// アクションゲーム
+	CCMenuItemImage *pButtonAction = CCMenuItemImage::create("block/block_yellow.png", "block/block_red.png", this, menu_selector(TitleScene::CallbackToActionGameScene));
+	CCMenu* pBtnAct = CCMenu::create(pButtonAction, NULL);
+	pBtnAct->setPosition(ccp(s.width*.5, s.height*.5 + (32*2)) );
+	this->addChild(pBtnAct);
 
 	return true;
 }
@@ -61,6 +67,7 @@ void TitleScene::CallbackToPinballBase(CCObject* pSender)
 	CCScene* nextScene = PinballScene::scene();
 	//切り替えの時間を設定。ここでは1秒
 	float duration = 1.0f;
+
 	//フェードイン＆フェードアウト（CCTransitionFade）でトランジショーーーン
 	CCScene* pScene = CCTransitionFade::create(duration, nextScene);
 	if(pScene){
@@ -72,6 +79,19 @@ void TitleScene::CallbackToCrushGameScene(CCObject* pSender)
 {
 	//次のシーンとして、HelloWorld2シーンをセット
 	CCScene* nextScene = CrushGameScene::scene();
+	//切り替えの時間を設定。ここでは1秒
+	float duration = 1.0f;
+	//フェードイン＆フェードアウト（CCTransitionFade）でトランジショーーーン
+	CCScene* pScene = CCTransitionFade::create(duration, nextScene);
+	if(pScene){
+		CCDirector::sharedDirector()->replaceScene(pScene);
+	}
+}
+
+void TitleScene::CallbackToActionGameScene(CCObject* pSender)
+{
+	//次のシーンとして、HelloWorld2シーンをセット
+	CCScene* nextScene = ActionGameScene::scene();
 	//切り替えの時間を設定。ここでは1秒
 	float duration = 1.0f;
 	//フェードイン＆フェードアウト（CCTransitionFade）でトランジショーーーン
