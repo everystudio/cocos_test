@@ -12,5 +12,7 @@ temp/
 
 # ここ以下のファイルは無視する
 proj.android/
+!proj.android/src/
+
 
 
