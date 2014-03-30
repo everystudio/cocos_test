@@ -8,13 +8,13 @@
 #ifndef ACTIONGAME_H_
 #define ACTIONGAME_H_
 
-#include "GB2ShapeCache-x.h"	// なんかしらんけどこれ入れるとCCSpriteが宣言できる
 #include "cocos2d.h"
+#include "Lib/SpriteBase.h"
 
 class ActionGameScene : public cocos2d::CCLayer
 {
 public:
-	CCSprite* m_pTotoki;
+	SpriteBase* m_pTotoki;
 
 	enum kZOrder {
 		kZOrder_Background = 1,

@@ -55,7 +55,7 @@ bool ActionGameScene::init()
 	CCString* filename = CCString::createWithFormat("totoki_airi_03.png");
 
 	//CCSprite* m_pTotoki = CCSprite::createWithSpriteFrameName( filename->getCString());
-	m_pTotoki = CCSprite::createWithSpriteFrameName( filename->getCString());
+	m_pTotoki = SpriteBase::createWithSpriteFrameName( filename->getCString());
 
 	m_pTotoki->setPosition(ccp((int)winSize.width / 2 , (int)winSize.height/2));
 
@@ -149,12 +149,18 @@ void ActionGameScene::ccTouchesBegan(CCSet* touches , CCEvent* event)
 		}
 		else if( location.x < winSize.width/2){
 			// 画面下左側
+			/*
 			CCPoint pos = m_pTotoki->getPosition();
 			pos.x += 1.0f;
 			m_pTotoki->setPosition(pos);
+			*/
+			m_pTotoki->AddPosX(-1.0f);
+			CCLog("hidari");
 		}
 		else {
 			// 画面下右側
+			m_pTotoki->AddPosX( 1.0f);
+			CCLog("migi");
 		}
 	}
 	return;

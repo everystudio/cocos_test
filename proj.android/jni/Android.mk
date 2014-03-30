@@ -20,9 +20,11 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/CrushGameScene.cpp \
                    ../../Classes/ActionGameScene.cpp \
                    ../../Classes/GB2ShapeCache-x.cpp \
+                   ../../Classes/Lib/SpriteBase.cpp \
                    ../../Classes/HelloWorldScene.cpp
-
+                   
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+# LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes/Lib
 
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos2dx_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocosdenshion_static
