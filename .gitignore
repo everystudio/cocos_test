@@ -10,8 +10,12 @@ temp/
 # オブジェクトファイルも無視する
 *.o
 *.d
+#*.a
+#*.so
 
 # ここ以下のファイルは無視する
+proj.android/obj/
+proj.android/bin/
 #proj.android
 #proj.android/
 #!*/proj.android/src/
