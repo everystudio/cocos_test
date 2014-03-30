@@ -10,7 +10,7 @@
 #include "GB2ShapeCache-x.h"
 #include "AppMacros.h"
 
- #include "TitleScene.h"
+#include "TitleScene.h"
 
 static int PTM_RATIO = 32;
 static int scorePoint = 0;
@@ -41,6 +41,8 @@ bool ActionGameScene::init()
 
 	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
 
+	// タップを有効にする
+	setTouchEnabled(true);
 	// マップチップ表示 　ここから
 	//CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("desert.tmx");
 	CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("sample_map.tmx");
@@ -51,11 +53,13 @@ bool ActionGameScene::init()
 	cache->addSpriteFramesWithFile("totoki_airi_dot.plist");
 
 	CCString* filename = CCString::createWithFormat("totoki_airi_03.png");
-	CCSprite* totoki = CCSprite::createWithSpriteFrameName( filename->getCString());
 
-	totoki->setPosition(ccp((int)winSize.width / 2 , (int)winSize.height/2));
+	//CCSprite* m_pTotoki = CCSprite::createWithSpriteFrameName( filename->getCString());
+	m_pTotoki = CCSprite::createWithSpriteFrameName( filename->getCString());
 
-	this->addChild(totoki);
+	m_pTotoki->setPosition(ccp((int)winSize.width / 2 , (int)winSize.height/2));
+
+	this->addChild(m_pTotoki);
 
 	CCAnimation* totoki_anim = CCAnimation::create();
 	totoki_anim->addSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("totoki_airi_03.png"));
@@ -78,7 +82,7 @@ bool ActionGameScene::init()
 	CCRepeatForever *actionreq = CCRepeatForever::create(action);
 	CCRepeat *actionrrepeat =    CCRepeat::create(action , 1);
 
-	totoki->runAction(actionrrepeat);
+	m_pTotoki->runAction(actionrrepeat);
 	//totoki->runAction(sequence);
 
 	// b.pngへ変える
@@ -97,7 +101,7 @@ bool ActionGameScene::init()
 	int x = dict_player_prop->valueForKey("x")->intValue();
 	int y = dict_player_prop->valueForKey("y")->intValue();
 
-	totoki->setPosition(ccp(x , y));
+	m_pTotoki->setPosition(ccp(x , y));
 	//totoki->setPosition(ccp((int)winSize.width / 2 + x, (int)winSize.height/2 + y));
 
 	char log_buf[100];
@@ -122,6 +126,40 @@ bool ActionGameScene::init()
 
 	return true;
 }
+
+
+
+
+
+void ActionGameScene::ccTouchesBegan(CCSet* touches , CCEvent* event)
+{
+	CCSetIterator it;
+	for(it = touches->begin() ; it != touches->end() ; ++it){
+		CCTouch* touch = (CCTouch*)(*it);
+		if(!touch){
+			break;
+		}
+		CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+
+		CCDirector* pDirector = CCDirector::sharedDirector();
+		CCPoint location = pDirector->convertToGL(touch->getLocationInView());
+
+		if(location.y > winSize.height /2 ){
+			// 画面上部をタップ
+		}
+		else if( location.x < winSize.width/2){
+			// 画面下左側
+			CCPoint pos = m_pTotoki->getPosition();
+			pos.x += 1.0f;
+			m_pTotoki->setPosition(pos);
+		}
+		else {
+			// 画面下右側
+		}
+	}
+	return;
+}
+
 
 
 

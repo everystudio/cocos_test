@@ -8,11 +8,13 @@
 #ifndef ACTIONGAME_H_
 #define ACTIONGAME_H_
 
+#include "GB2ShapeCache-x.h"	// なんかしらんけどこれ入れるとCCSpriteが宣言できる
 #include "cocos2d.h"
 
 class ActionGameScene : public cocos2d::CCLayer
 {
 public:
+	CCSprite* m_pTotoki;
 
 	enum kZOrder {
 		kZOrder_Background = 1,
@@ -36,6 +38,9 @@ public:
 	CREATE_FUNC(ActionGameScene);
 
 	void callbackGotoTitleScene(CCObject* pSender);	
+
+	virtual void ccTouchesBegan( cocos2d::CCSet* touches , cocos2d::CCEvent* event);
+
 };
 
 
