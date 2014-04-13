@@ -17,6 +17,7 @@ static int scorePoint = 0;
 
 // ブランチテスト
 // これもブランチテスト
+// さらにブランチテスト
 
 //#include "SkitSceneBase.h"
 //#include "BlockGameScene.h"
