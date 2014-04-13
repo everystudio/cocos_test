@@ -16,6 +16,7 @@ static int PTM_RATIO = 32;
 static int scorePoint = 0;
 
 // ブランチテスト
+// これもブランチテスト
 
 //#include "SkitSceneBase.h"
 //#include "BlockGameScene.h"
