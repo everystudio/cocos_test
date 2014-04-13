@@ -47,6 +47,10 @@ bool ActionGameScene::init()
 	//CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("desert.tmx");
 	CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("sample_map.tmx");
 	this->addChild(pTileMap);
+
+	//レイアーの名前で取り出す
+	CCTMXLayer *collisionLayer = pTileMap->layerNamed("collision");
+
 	// マップチップ表示 　ここまで
 
 	CCSpriteFrameCache* cache = CCSpriteFrameCache::sharedSpriteFrameCache();
@@ -155,11 +159,13 @@ void ActionGameScene::ccTouchesBegan(CCSet* touches , CCEvent* event)
 			m_pTotoki->setPosition(pos);
 			*/
 			m_pTotoki->AddPosX(-1.0f);
+			m_pTotoki->setFlipX(false);
 			CCLog("hidari");
 		}
 		else {
 			// 画面下右側
 			m_pTotoki->AddPosX( 1.0f);
+			m_pTotoki->setFlipX(true);
 			CCLog("migi");
 		}
 	}
