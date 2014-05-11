@@ -21,8 +21,9 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/ActionGameScene.cpp \
                    ../../Classes/GB2ShapeCache-x.cpp \
                    ../../Classes/Lib/SpriteBase.cpp \
-                   ../../Classes/HelloWorldScene.cpp
-                   
+                   ../../Classes/HelloWorldScene.cpp \
+                   ../../Classes/CollisionManager.cpp
+
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 # LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes/Lib
 
