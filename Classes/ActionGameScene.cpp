@@ -46,6 +46,10 @@ bool ActionGameScene::init()
 
 	// タップを有効にする
 	setTouchEnabled(true);
+
+	// シングルタッチのみ
+	setTouchMode(kCCTouchesOneByOne);
+
 	// マップチップ表示 　ここから
 	//CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("desert.tmx");
 	CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("sample_map.tmx");
