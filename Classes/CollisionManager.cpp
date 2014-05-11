@@ -82,7 +82,7 @@ bool CollisionManager::Create(CCTMXLayer* layer)
 			CCRect rect(position.x, position.y, tile_size.width, tile_size.height);
 			m_RectArray.push_back(rect);
 
-			CCLog("rect x=%f y=%f w=%f h=%f" , rect.getMinX(), rect.getMinY() , rect.getMaxX() , rect.getMaxY() );
+			CCLog("rect x=%f y=%f w=%f h=%f" , rect.origin.x, rect.origin.y , rect.size.width , rect.size.height );
 
 
 		}
@@ -177,6 +177,8 @@ bool CollisionManager::DetectY(const CCRect& position, float dy, float& result) 
 
 	RectArray::const_iterator it = m_RectArray.begin();
 
+	bool bHit = false;
+
 	for( ; it!=m_RectArray.end(); it++)
 	{
 		const CCRect& rect = (*it);
@@ -185,7 +187,7 @@ bool CollisionManager::DetectY(const CCRect& position, float dy, float& result) 
 			continue;	/*	あたってない	*/
 		}
 		else {
-			CCLog("hit y");
+			bHit = true;
 		}
 
 		/*	めり込み分を算出	*/
@@ -223,7 +225,12 @@ bool CollisionManager::DetectY(const CCRect& position, float dy, float& result) 
 	/*	正方向、負方向の補正値を足したものが最終的な補正値	*/
 	result = adjust_posi + adjust_nega;
 
-	return true;
+	if( bHit ){
+		CCLog("hit y : offset=%f" ,result );
+	}
+
+
+	return bHit;
 }
 
 /**

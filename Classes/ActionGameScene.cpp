@@ -125,6 +125,11 @@ bool ActionGameScene::init()
 	m_ptSpeed.setPoint(0.0f , 0.0f);
 	m_ptAccel.setPoint(0.0f , -0.001f);
 
+	//CCRect test = m_pTotoki->getTextureRect();
+	CCRect test = m_pTotoki->getRect();
+	//CCLog("totoki x=%f y=%f w=%f h=%f" , test.getMinX(), test.getMinY() , test.getMaxX() , test.getMaxY() );
+	CCLog("totoki x=%f y=%f w=%f h=%f" , test.origin.x, test.origin.y , test.size.width , test.size.height );
+
 	//totoki->setPosition(ccp((int)winSize.width / 2 + x, (int)winSize.height/2 + y));
 
 	char log_buf[100];
@@ -178,13 +183,13 @@ void ActionGameScene::ccTouchesBegan(CCSet* touches , CCEvent* event)
 			*/
 			//m_pTotoki->AddPosX(-1.0f);
 			m_pTotoki->setFlipX(false);
-			m_ptPosition.x +=-3.0f;
+			m_ptPosition.y +=-3.0f;
 		}
 		else {
 			// 画面下右側
 			//m_pTotoki->AddPosX( 1.0f);
 			m_pTotoki->setFlipX(true);
-			m_ptPosition.x += 3.0f;
+			m_ptPosition.y += 3.0f;
 		}
 	}
 
@@ -199,6 +204,8 @@ void ActionGameScene::ccTouchesBegan(CCSet* touches , CCEvent* event)
 
 void ActionGameScene::update(float dt)
 {
+
+	/*
 	// オペレータでうまいこと加算できなかった
 	m_ptSpeed.x += m_ptAccel.x;
 	m_ptSpeed.y += m_ptAccel.y;
@@ -214,7 +221,15 @@ void ActionGameScene::update(float dt)
 	totoki_rect = m_pTotoki->getRect();
 	m_cCollisionManager.DetectY( totoki_rect , m_ptPosition.y , fOffset );
 
+	m_ptPosition.y += fOffset;
 
+
+	*/
+
+	float fOffset = 0.0f;
+	float ftemp = 0.0f;
+	CCRect totoki_rect = m_pTotoki->getRect();
+	m_cCollisionManager.DetectY( totoki_rect , m_ptPosition.y , fOffset );
 
 
 
