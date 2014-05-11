@@ -11,6 +11,8 @@
 #include "cocos2d.h"
 #include "Lib/SpriteBase.h"
 
+#include "CollisionManager.h"
+
 class ActionGameScene : public cocos2d::CCLayer
 {
 public:
@@ -18,6 +20,8 @@ public:
 	CCPoint m_ptAccel;
 	CCPoint m_ptSpeed;
 	CCPoint m_ptPosition;
+
+	CollisionManager m_cCollisionManager;
 
 	enum kZOrder {
 		kZOrder_Background = 1,

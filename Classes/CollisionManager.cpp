@@ -71,8 +71,7 @@ bool CollisionManager::Create(CCTMXLayer* layer)
 
 			/*	GIDを取得。ここにタイルが存在すれば >0 の値が取れる	*/
 			int gid = layer->tileGIDAt(coord);
-			if(0 <= gid)
-			{
+			if(0 >= gid){
 				continue;	/*	ここにタイルはないらしい	*/
 			}
 
@@ -82,6 +81,10 @@ bool CollisionManager::Create(CCTMXLayer* layer)
 			/*	矩形を登録	*/
 			CCRect rect(position.x, position.y, tile_size.width, tile_size.height);
 			m_RectArray.push_back(rect);
+
+			CCLog("rect x=%f y=%f w=%f h=%f" , rect.getMinX(), rect.getMinY() , rect.getMaxX() , rect.getMaxY() );
+
+
 		}
 	}
 
@@ -180,6 +183,9 @@ bool CollisionManager::DetectY(const CCRect& position, float dy, float& result) 
 		if(!rect.intersectsRect(after))
 		{
 			continue;	/*	あたってない	*/
+		}
+		else {
+			CCLog("hit y");
 		}
 
 		/*	めり込み分を算出	*/

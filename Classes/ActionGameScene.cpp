@@ -11,6 +11,7 @@
 #include "AppMacros.h"
 
 #include "TitleScene.h"
+#include "CollisionManager.h"
 
 static int PTM_RATIO = 32;
 static int scorePoint = 0;
@@ -48,7 +49,7 @@ bool ActionGameScene::init()
 	setTouchEnabled(true);
 
 	// シングルタッチのみ
-	setTouchMode(kCCTouchesOneByOne);
+	//setTouchMode(kCCTouchesOneByOne);
 
 	// マップチップ表示 　ここから
 	//CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("desert.tmx");
@@ -62,6 +63,8 @@ bool ActionGameScene::init()
 
 	//レイアーの名前で取り出す
 	CCTMXLayer *collisionLayer = pTileMap->layerNamed("collision");
+
+	m_cCollisionManager.Create(collisionLayer);
 
 	// マップチップ表示 　ここまで
 
@@ -202,6 +205,21 @@ void ActionGameScene::update(float dt)
 
 	m_ptPosition.x += m_ptSpeed.x;
 	m_ptPosition.y += m_ptSpeed.y;
+
+	CCRect totoki_rect = m_pTotoki->getRect();
+	float fOffset = 0.0f;
+	m_cCollisionManager.DetectX( totoki_rect , m_ptPosition.x , fOffset );
+
+	fOffset = 0.0f;
+	totoki_rect = m_pTotoki->getRect();
+	m_cCollisionManager.DetectY( totoki_rect , m_ptPosition.y , fOffset );
+
+
+
+
+
+
+
 
 	m_pTotoki->setPosition( m_ptPosition );
 
