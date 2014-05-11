@@ -15,6 +15,9 @@ class ActionGameScene : public cocos2d::CCLayer
 {
 public:
 	SpriteBase* m_pTotoki;
+	CCPoint m_ptAccel;
+	CCPoint m_ptSpeed;
+	CCPoint m_ptPosition;
 
 	enum kZOrder {
 		kZOrder_Background = 1,
@@ -37,9 +40,11 @@ public:
 	// implement the "static node()" method manually
 	CREATE_FUNC(ActionGameScene);
 
-	void callbackGotoTitleScene(CCObject* pSender);	
+	void callbackGotoTitleScene(CCObject* pSender);
 
 	virtual void ccTouchesBegan( cocos2d::CCSet* touches , cocos2d::CCEvent* event);
+
+	void update(float dt);
 
 };
 
