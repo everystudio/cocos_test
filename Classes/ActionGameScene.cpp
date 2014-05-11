@@ -46,10 +46,19 @@ bool ActionGameScene::init()
 
 	// タップを有効にする
 	setTouchEnabled(true);
+
+	// シングルタッチのみ
+	setTouchMode(kCCTouchesOneByOne);
+
 	// マップチップ表示 　ここから
 	//CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("desert.tmx");
 	CCTMXTiledMap* pTileMap = CCTMXTiledMap::create("sample_map.tmx");
 	this->addChild(pTileMap);
+
+	CCLog("mapwidth:%f" , pTileMap->getMapSize().width);
+	CCLog("mapehight:%f" , pTileMap->getMapSize().height);
+	CCLog("tilewidth:%f" , pTileMap->getTileSize().width);
+	CCLog("tilewidth:%f" , pTileMap->getTileSize().height);
 
 	//レイアーの名前で取り出す
 	CCTMXLayer *collisionLayer = pTileMap->layerNamed("collision");
@@ -109,6 +118,10 @@ bool ActionGameScene::init()
 	int y = dict_player_prop->valueForKey("y")->intValue();
 
 	m_pTotoki->setPosition(ccp(x , y));
+	m_ptPosition = m_pTotoki->getPosition();
+	m_ptSpeed.setPoint(0.0f , 0.0f);
+	m_ptAccel.setPoint(0.0f , -0.001f);
+
 	//totoki->setPosition(ccp((int)winSize.width / 2 + x, (int)winSize.height/2 + y));
 
 	char log_buf[100];
@@ -131,12 +144,11 @@ bool ActionGameScene::init()
 	pBtnTitle->setPosition(ccp(winSize.width*0.9f, winSize.height*0.9f + 32) );
 	this->addChild(pBtnTitle , kZOrder_Button);
 
+		// 毎フレーム処理の開始
+	scheduleUpdate();
+
 	return true;
 }
-
-
-
-
 
 void ActionGameScene::ccTouchesBegan(CCSet* touches , CCEvent* event)
 {
@@ -161,19 +173,48 @@ void ActionGameScene::ccTouchesBegan(CCSet* touches , CCEvent* event)
 			pos.x += 1.0f;
 			m_pTotoki->setPosition(pos);
 			*/
-			m_pTotoki->AddPosX(-1.0f);
+			//m_pTotoki->AddPosX(-1.0f);
 			m_pTotoki->setFlipX(false);
-			CCLog("hidari");
+			m_ptPosition.x +=-3.0f;
 		}
 		else {
 			// 画面下右側
-			m_pTotoki->AddPosX( 1.0f);
+			//m_pTotoki->AddPosX( 1.0f);
 			m_pTotoki->setFlipX(true);
-			CCLog("migi");
+			m_ptPosition.x += 3.0f;
 		}
 	}
+
+	//CCRect test = m_pTotoki->getTextureRect();
+	CCRect test = m_pTotoki->getRect();
+	CCLog("totoki x=%f y=%f w=%f h=%f" , test.getMinX(), test.getMinY() , test.getMaxX() , test.getMaxY() );
+
+
 	return;
 }
+
+
+void ActionGameScene::update(float dt)
+{
+	// オペレータでうまいこと加算できなかった
+	m_ptSpeed.x += m_ptAccel.x;
+	m_ptSpeed.y += m_ptAccel.y;
+
+	m_ptPosition.x += m_ptSpeed.x;
+	m_ptPosition.y += m_ptSpeed.y;
+
+	m_pTotoki->setPosition( m_ptPosition );
+
+	// 
+	if( m_ptPosition.y < -72.0f){
+		m_ptPosition.y = 200.0f;
+	}
+
+	return;
+}
+
+
+
 
 
 

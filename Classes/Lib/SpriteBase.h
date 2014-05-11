@@ -44,9 +44,25 @@ public:
 	static SpriteBase* createWithSpriteFrameName(const char *pszSpriteFrameName){
 		return (SpriteBase*)CCSprite::createWithSpriteFrameName(pszSpriteFrameName);
 	}
+	CCRect getRect ();
+
+
 	
 };
 
 
 
 #endif /* SPRITEBASE_H_ */
+
+
+
+
+
+
+
+
+
+
+
+
+

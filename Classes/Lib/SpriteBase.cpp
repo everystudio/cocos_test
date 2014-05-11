@@ -51,6 +51,15 @@ void SpriteBase::AddPosY( float _fY )
 	return;
 }
 
+	// スプライトのCGRectを取得
+CCRect SpriteBase::getRect () {
+  return CCRectMake(
+    this->getPosition().x - this->getContentSize().width * this->getAnchorPoint().x,
+    this->getPosition().y - this->getContentSize().height * this->getAnchorPoint().y,
+    this->getContentSize().width,
+    this->getContentSize().height
+  );
+}
 
 
 
